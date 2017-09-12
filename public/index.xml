@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Academic on Academic</title>
+    <title>Self Portrait on Self Portrait</title>
     <link>https://example.com/</link>
-    <description>Recent content in Academic on Academic</description>
+    <description>Recent content in Self Portrait on Self Portrait</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2016 Your Name</copyright>
+    <copyright>&amp;copy; 2017 Prapanch Nair</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Art1</title>
+      <link>https://example.com/art/art1/</link>
+      <pubDate>Tue, 12 Sep 2017 23:22:20 +0200</pubDate>
+      
+      <guid>https://example.com/art/art1/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Example Talk</title>

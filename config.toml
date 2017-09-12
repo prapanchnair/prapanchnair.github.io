@@ -1,6 +1,6 @@
 baseurl = "https://example.com/"  # End your URL with a `/` trailing slash.
-title = "Academic"
-copyright = "&copy; 2016 Your Name"
+title = "Self Portrait"
+copyright = "&copy; 2017 Prapanch Nair"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
@@ -9,7 +9,7 @@ footnotereturnlinkcontents = "<sup>^</sup>"
 disqusShortname = ""
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+googleAnalytics = "UA-80874953-1"
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
@@ -19,17 +19,17 @@ defaultContentLanguageInSubdir = false
   hrefTargetBlank = true
 
 [params]
-  name = "Lena Smith"
-  role = "Professor of Artificial Intelligence"
-  organization = "Stanford University"
-  organization_url = ""
+  name = "Prapanch Nair"
+  role = "Computational Physicist"
+  organization = "Institute for Multiscale Simulation"
+  organization_url = "http://mss.cbi.fau.de"
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "test@example.org"
-  address = "Building 1 Room 1, Stanford University, California, 90210, USA"
-  office_hours = "Monday 10:00 to 13:00 or email for appointment"
-  phone = "888 888 88 88"
-  skype = "echo123"
+  address = "Nägelsbachstrasse 49b, 91052 Erlangen."
+  office_hours = ""
+  phone = ""
+  skype = "prapanch.nair"
   telegram = ""
 
   # Enable Keybase in Contact section by entering your keybase.io username.
@@ -86,7 +86,7 @@ defaultContentLanguageInSubdir = false
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  custom_css = []
+  custom_css = ["green.css"]
   custom_js  = []
 
   # Publication types.
@@ -126,22 +126,27 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:test@example.org"
+    link = "mailto:prapanch.nair@gmail.com"
 
   [[params.social]]
     icon = "twitter"
     icon_pack = "fa"
-    link = "//twitter.com/GeorgeCushen"
+    link = "//twitter.com/prapanchnair"
+  
+  [[params.social]]
+    icon = "instagram"
+    icon_pack = "fa"
+    link = "//instagram.com/prapanch.nair"
 
   [[params.social]]
     icon = "google-scholar"
     icon_pack = "ai"
-    link = "https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
+    link = ""
 
   [[params.social]]
-    icon = "github"
-    icon_pack = "fa"
-    link = "//github.com/gcushen"
+    icon = "researchgate"
+    icon_pack = "ai"
+    link = "//github.com/prapanchnair"
 
 
 # Navigation Links
@@ -165,19 +170,25 @@ defaultContentLanguageInSubdir = false
   weight = 3
 
 [[menu.main]]
-  name = "Projects"
-  url = "#projects"
+  name = "Art"
+  url = "#art"
   weight = 4
 
 [[menu.main]]
-  name = "Teaching"
-  url = "#teaching"
+  name = "Projects"
+  url = "#projects"
   weight = 5
+
+#[[menu.main]]
+#  name = "Teaching"
+#  url = "#teaching"
+#  weight = 5
 
 [[menu.main]]
   name = "Contact"
   url = "#contact"
   weight = 6
+
 
 # Taxonomies.
 [taxonomies]
