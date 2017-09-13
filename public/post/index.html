@@ -44,21 +44,21 @@
     
   
 
-  <link rel="alternate" href="https://example.com/post/index.xml" type="application/rss+xml" title="Self Portrait">
-  <link rel="feed" href="https://example.com/post/index.xml" type="application/rss+xml" title="Self Portrait">
+  <link rel="alternate" href="/post/index.xml" type="application/rss+xml" title="Self Portrait">
+  <link rel="feed" href="/post/index.xml" type="application/rss+xml" title="Self Portrait">
 
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://example.com/post/">
+  <link rel="canonical" href="/post/">
 
   
 
   <title>Posts | Self Portrait</title>
-<script type="text/javascript" src="/instafeed/instafeed.min.js"></script>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+<script type="text/javascript" src="/instafeed/instafeed.min.js"></script>
 
 <nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
   <div class="container">
@@ -175,7 +175,7 @@
   
   <div>
     
-    <h2><a href="https://example.com/post/getting-started/">Getting started with the Academic framework for Hugo</a></h2>
+    <h2><a href="/post/getting-started/">Getting started with the Academic framework for Hugo</a></h2>
     
 
 <div class="article-metadata">
@@ -220,7 +220,7 @@
   
   <div>
     
-    <h2><a href="https://example.com/post/widgets/">Customizing the homepage with widgets</a></h2>
+    <h2><a href="/post/widgets/">Customizing the homepage with widgets</a></h2>
     
 
 <div class="article-metadata">
@@ -263,7 +263,7 @@
   
   <div>
     
-    <h2><a href="https://example.com/post/managing-content/">Managing content</a></h2>
+    <h2><a href="/post/managing-content/">Managing content</a></h2>
     
 
 <div class="article-metadata">
@@ -299,14 +299,36 @@
 
     <div class="article-style"><p>
       
-      This is a brief guide to managing content with the Academic framework. Content can include publications, projects, talks, and news/blog articles. After you have read this guide about creating and managing content, you may also be interested to learn about <a href="https://example.com/post/writing-markdown-latex/" target="_blank">writing content with Markdown, LaTeX, and Shortcodes</a>.
+      <a>
+Hello <br>
+<script>
+var feed = new Instafeed({
+  get: &lsquo;user&rsquo;,
+  userId: &lsquo;prapanch.nair&rsquo;,
+  filter: function(image) {
+    return image.tags.indexOf(&lsquo;TAG_NAME&rsquo;) &gt;= 0;
+  }
+});
+feed.run();
+</script>
+</a>
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: &lsquo;popular&rsquo;,
+        tagName: &ldquo;,
+        clientId: &lsquo;ff784033748546b19bf24e3e049ae26e&rsquo;,
+        template: &lsquo;<a class="animation" href="{{link}}"><img src="{{image}}" /></a>&lsquo;
+    });
+    feed.run();
+</script>
+This is a brief guide to managing content with the Academic framework. Content can include publications, projects, talks, and news/blog articles. After you have read this guide about creating and managing content, you may also be interested to learn about <a href="/post/writing-markdown-latex/" target="_blank">writing content with Markdown, LaTeX, and Shortcodes</a>.
       
     </p></div>
   </div>
   
   <div>
     
-    <h2><a href="https://example.com/post/writing-markdown-latex/">Writing content with Markdown, LaTeX, and Shortcodes</a></h2>
+    <h2><a href="/post/writing-markdown-latex/">Writing content with Markdown, LaTeX, and Shortcodes</a></h2>
     
 
 <div class="article-metadata">
@@ -338,7 +360,7 @@
   
   <div>
     
-    <h2><a href="https://example.com/post/migrate-from-jekyll/">Migrate from Jekyll to Hugo</a></h2>
+    <h2><a href="/post/migrate-from-jekyll/">Migrate from Jekyll to Hugo</a></h2>
     
 
 <div class="article-metadata">
