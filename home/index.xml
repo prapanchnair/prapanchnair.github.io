@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on Self Portrait</title>
-    <link>https://example.com/home/</link>
+    <link>/home/</link>
     <description>Recent content in Homes on Self Portrait</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>

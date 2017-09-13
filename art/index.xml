@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Arts on Self Portrait</title>
-    <link>https://example.com/art/</link>
+    <link>/art/</link>
     <description>Recent content in Arts on Self Portrait</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Art1</title>
-      <link>https://example.com/art/art1/</link>
+      <link>/art/art1/</link>
       <pubDate>Tue, 12 Sep 2017 23:22:20 +0200</pubDate>
       
-      <guid>https://example.com/art/art1/</guid>
+      <guid>/art/art1/</guid>
       <description></description>
     </item>
     
