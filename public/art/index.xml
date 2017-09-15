@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Arts on Self Portrait</title>
-    <link>prapanchnair.github.io/art/</link>
+    <link>/art/</link>
     <description>Recent content in Arts on Self Portrait</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Prapanch Nair</copyright>
     <lastBuildDate>Tue, 12 Sep 2017 23:22:20 +0200</lastBuildDate>
-    <atom:link href="prapanchnair.github.io/art/" rel="self" type="application/rss+xml" />
+    <atom:link href="/art/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Art1</title>
-      <link>prapanchnair.github.io/art/art1/</link>
+      <link>/art/art1/</link>
       <pubDate>Tue, 12 Sep 2017 23:22:20 +0200</pubDate>
       
-      <guid>prapanchnair.github.io/art/art1/</guid>
+      <guid>/art/art1/</guid>
       <description></description>
     </item>
     
