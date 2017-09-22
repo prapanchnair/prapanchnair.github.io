@@ -39,11 +39,29 @@
     </item>
     
     <item>
+      <title>Education</title>
+      <link>/tags/education/</link>
+      <pubDate>Fri, 22 Sep 2017 00:11:27 +0200</pubDate>
+      
+      <guid>/tags/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Philosophy</title>
       <link>/tags/philosophy/</link>
       <pubDate>Fri, 15 Sep 2017 20:50:32 +0200</pubDate>
       
       <guid>/tags/philosophy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reading</title>
+      <link>/tags/reading/</link>
+      <pubDate>Fri, 22 Sep 2017 00:11:27 +0200</pubDate>
+      
+      <guid>/tags/reading/</guid>
       <description></description>
     </item>
     

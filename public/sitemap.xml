@@ -172,6 +172,16 @@
     
     <url>
     
+      <loc>/tags/education/</loc>
+      <lastmod>2017-09-22T00:11:27+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/tags/philosophy/</loc>
       <lastmod>2017-09-15T20:50:32+02:00</lastmod>
       <priority>0</priority>
@@ -194,6 +204,16 @@
     
       <loc>/publication_types/</loc>
       <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/reading/</loc>
+      <lastmod>2017-09-22T00:11:27+02:00</lastmod>
       <priority>0</priority>
     </url>
     
