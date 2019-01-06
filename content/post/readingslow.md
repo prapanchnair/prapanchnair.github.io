@@ -15,7 +15,7 @@ image = ""
 caption = ""
 
 +++
-As a studious kid in school, I always looked out for ways to improve my learning efficiency. During the 
+As a studious kid in school, I have always looked out for ways to improve my learning efficiency. During the 
 scramble for exam preparations, I came across a "speed reading" course. I got the course material delivered home in no time. 
 It was a bunch of weird exercises like reading  
 inverted pages and reading without enunciating the words. Soon after, I was almost unable to read anything
