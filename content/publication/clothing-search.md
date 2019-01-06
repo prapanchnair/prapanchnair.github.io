@@ -1,19 +1,18 @@
 +++
-abstract = "We present a mobile visual clothing search system whereby a smart phone user can either choose a social networking photo or take a new photo of a person wearing clothing of interest and search for similar clothing in a retail database. From the query image, the person is detected, clothing is segmented, and clothing features are extracted and quantized. The information is sent from the phone client to a server, where the feature vector of the query image is used to retrieve similar clothing products from online databases. The phone's GPS location is used to re-rank results by retail store location. State of the art work focuses primarily on the recognition of a diverse range of clothing offline and pays little attention to practical applications. Evaluated on a challenging dataset, the system is relatively fast and achieves promising results."
-abstract_short = "A mobile visual clothing search system is presented whereby a smart phone user can either choose a social networking image or capture a new photo of a person wearing clothing of interest and search for similar clothing in a large cloud-based ecommerce database. The phone's GPS location is used to re-rank results by retail store location, to inform the user of local stores where similar clothing items can be tried on."
-authors = ["GA Cushen", "MS Nixon"]
-date = "2013-07-01"
+abstract = "Gas bubbles immersed in a liquid and flowing through a large pressure gradient undergo volumetric deformation in addition to possible deviatoric deformation. While the high density liquid phase can be assumed to be an incompressible fluid, the gas phase needs to be modeled as a compressible fluid for such bubble flow problems. The Rayleigh–Plesset (RP) equation describes such a bubble undergoing volumetric deformation due to changes in pressure in the ambient incompressible fluid in the presence of capillary force at its boundary, assuming axisymmetric dynamics. We propose a compressible-incompressible coupling of Smoothed Particle Hydrodynamics (SPH) and validate this coupling against the RP model in two dimensions. This study complements the SPH simulations of a different class of compressible-incompressible systems where an outer compressible phase affects the dynamics of an inner incompressible phase. For different density ratios, a sinusoidal pressure variation is applied to the ambient incompressible liquid and the response of the bubble in terms of volumetric deformation is observed and compared with the solutions of the axisymmetric RP equation."
+abstract_short = ""
+authors = ["Prapanch Nair", "Gaurav Tomar"]
+date = "2019, January."
 image_preview = ""
 math = true
 publication_types = ["1"]
-publication = "In *International Conference on Multimedia and Expo Workshops (ICMEW)*, IEEE."
-publication_short = "In *ICMEW*"
+publication = "Computers and Fluids"
 selected = true
-title = "Mobile visual clothing search"
+title = "Simulations of gas-liquid compressible-incompressible systems using SPH"
 url_code = "#"
 url_dataset = "#"
-url_pdf = "http://eprints.soton.ac.uk/352095/1/Cushen-IMV2013.pdf"
-url_project = "project/deep-learning/"
+url_pdf = "https://www.sciencedirect.com/science/article/abs/pii/S0045793018308685"
+url_project = ""
 url_slides = "#"
 url_video = "#"
 
