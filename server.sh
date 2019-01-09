@@ -1,3 +1,3 @@
 #!/bin/bash
 
-hugo server --watch -t beg
+hugo server --watch -t academic
