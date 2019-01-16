@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>/post/loyalty/</loc>
+      <lastmod>2019-01-06T21:59:54+01:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/theidentitypanacea/</loc>
       <lastmod>2017-12-08T21:15:15+01:00</lastmod>
     </url>
@@ -170,7 +179,27 @@
     <url>
     
       <loc>/tags/education/</loc>
-      <lastmod>2017-09-22T00:11:27+02:00</lastmod>
+      <lastmod>2019-01-06T21:59:54+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/india/</loc>
+      <lastmod>2019-01-06T21:59:54+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/life/</loc>
+      <lastmod>2019-01-06T21:59:54+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -210,6 +239,26 @@
     
       <loc>/tags/reading/</loc>
       <lastmod>2017-09-22T00:11:27+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/science/</loc>
+      <lastmod>2019-01-06T21:59:54+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/categories/science/</loc>
+      <lastmod>2019-01-06T21:59:54+01:00</lastmod>
       <priority>0</priority>
     </url>
     

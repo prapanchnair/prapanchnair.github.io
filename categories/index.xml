@@ -9,5 +9,14 @@
     <copyright>&amp;copy; 2017 Prapanch Nair</copyright>
     <atom:link href="/categories/" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title>Science</title>
+      <link>/categories/science/</link>
+      <pubDate>Sun, 06 Jan 2019 21:59:54 +0100</pubDate>
+      
+      <guid>/categories/science/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
