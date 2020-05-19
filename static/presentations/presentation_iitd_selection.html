@@ -83,7 +83,8 @@ if( window.location.search.match( /print-pdf/gi ) ) {
    <h3> Undergraduate education </h3>
    Bachelor of Engineering in Aeronautical Engineering&mdash;Park College of Engineering (Anna University), Coimbatore.
    <h3> PhD </h3>
-Mechanical Engineering, Indian Institute of Science, Bangalore. Guide&mdash;Assoc. Prof. Gaurav Tomar. 
+Mechanical Engineering, Indian Institute of Science, Bangalore. Guide&mdash;Assoc. Prof. Gaurav Tomar.
+<hr>
 <h3>Experience</h3>
 <ul>
   <li>Scientist/Engineer (Wind Engineering), RWDI India Pvt. Ltd., Thiruvananthapuram (1 year).
@@ -317,9 +318,9 @@ Reveal.initialize({
   multiplex: {
     // Example values. To generate your own, see the socket.io server instructions.
     //secret: '1589895213621441626',         
-    secret: null, 
-    id: 'bee402a178a00f39', 
-    url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh/' // Location of socket.io serveri
+    secret:null, 
+    id:'bee402a178a00f39', 
+    url:'https://reveal-js-multiplex-ccjbegmaii.now.sh/' // Location of socket.io serveri
   },
 
   dependencies: [
@@ -337,7 +338,7 @@ Reveal.initialize({
   { src: '/plugin/zoom-js/zoom.js', async: true},
   { src: '/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
   { src: '/plugin/math/math.js', async: true },
-  { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/1.0.0/socket.io.js', async: true },
+  { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.0/socket.io.js', async: true },
   //{ src: '/plugin/multiplex/master.js', async: true },
   { src: '/plugin/multiplex/client.js', async: true },
   ]
