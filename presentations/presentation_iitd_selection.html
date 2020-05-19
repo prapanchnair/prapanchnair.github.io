@@ -11,12 +11,10 @@
 
      <!--                                                                        
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />-->
-    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.1/css/reveal.min.css" crossorigin="anonymous" />
-    <!--
+     <!--    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.1/css/reveal.min.css" crossorigin="anonymous" />-->
     <link rel="stylesheet" href="/css/reveal.min.css" >
-     -->
-    <!--<link rel="stylesheet" href="/css/theme/default.css" id="theme">-->
-    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.1/css/theme/default.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/theme/default.css" id="theme">
+    <!--    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.1/css/theme/default.css" crossorigin="anonymous" />-->
 <link rel="stylesheet" href="/css/tree.css">
 <link rel="stylesheet" href="/css/local.css">
 
@@ -40,7 +38,7 @@ skipStartupTypeset: true
 </script>
 
 <!-- For syntax highlighting -->
-  <!-- <link rel="stylesheet" href="lib/css/zenburn.css">-->
+  <link rel="stylesheet" href="/lib/css/zenburn.css">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -94,11 +92,11 @@ background:url('gene3d/eurofusion.png'), url('gene3d/ipp_2.png'); background-rep
   </div>
 
 </div>
-    <script src="/lib/js/head.min.js" type="text/javascript" ></script>
 
-   <!--  <script src="/js/reveal.min.js" type="text/javascript" ></script> -->
+<script src="/lib/js/head.min.js" type="text/javascript" ></script>
+<script src="/js/reveal.min.js" type="text/javascript" ></script> 
    <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js" integrity="sha256-+09kLhwACKXFPDvqo4xMMvi4+uXFsRZ2uYGbeN1U8sI=" crossorigin="anonymous"></script> -->
- <script src= https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.1/js/reveal.min.js" crossorigin="anonymous"></script> 
+   <!--  <script src= https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.1/js/reveal.min.js" crossorigin="anonymous"></script>  -->
 <!--                                                                                 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/marked.js" integrity="sha256-c6mIBJmjwIEMzRFz4hJTWcWDvcGnqJUicbkA6bsQoYE=" crossorigin="anonymous"></script>
      -->                                              <!--                                   
@@ -156,20 +154,24 @@ background:url('gene3d/eurofusion.png'), url('gene3d/ipp_2.png'); background-rep
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
-					{ src: '/lib/js/classList.js', condition: function() { return !document.body.classList; } },
 //					{ src:'https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js', condition: function() { return !document.body.classList; } },
-					{ src:'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src:'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src:'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/highlight/highlight.min.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.js', async: true}, 
-					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js' , async: true },
-          { src: 'plugin/multiplex/master.js', async: true },
-          { src: 'plugin/math/math.js', async: true }
+//					{ src:'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+//					{ src:'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+//					{ src:'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/highlight/highlight.min.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ //         { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.js', async: true}, 
+	//				{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
 
-        
-        
-        
+         { src: '/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+         { src: '/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+         { src: '/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+         { src: '/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+         { src: '/plugin/zoom-js/zoom.js', async: true},
+         //condition: function() { return !!document.body.classList; } },      
+         { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+        { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js' , async: true },
+          { src: '/plugin/multiplex/master.js', async: true },
+          { src: '/plugin/math/math.js', async: true }
+
         //          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/multiplex/client.js', async: true },
 // katex
           //{ src: 'plugin/math-katex/math-katex.js', async: true }
