@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>[IITD] FACULTY</title>
+<meta name="description" content="IISc 2014 - SPH">
+<meta name="author" content="Prapanch Nair">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/reveal.min.css">
+<link rel="stylesheet" href="css/theme/default.css" id="theme">
+<link rel="stylesheet" href="css/tree.css">
+<link rel="stylesheet" href="css/local.css">
+<!--MathJax-->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({ 
+TeX: {
+extensions: ["color.js","tex2jax.js"],
+Macros: {
+Shapes: '\\mathbb{X}',
+Shape: 'X',
+},
+tex2jax: {
+inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true
+         }
+},
+skipStartupTypeset: true
+}); 
+</script>
+
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+if( window.location.search.match( /print-pdf/gi ) ) {
+  var link = document.createElement( 'link' );
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = 'css/print/pdf.css';
+  document.getElementsByTagName( 'head' )[0].appendChild( link );
+}
+</script>
+
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+<style>
+body{
+background:url('gene3d/eurofusion.png'), url('gene3d/ipp_2.png'); background-repeat: no-repeat; background-position: 20% 100%, 80% 100% ;background-size: 25% auto, 30% ;
+}
+</style>
+</head>
+
+<body>
+
+<div class="reveal">
+
+  <!-- Any section element inside of this container is displayed as a slide -->
+  <div class="slides">
+ <!--   <section data-background="pecha/10000ft.jpg" >
+      <h2> <a style="color:white"> Prapanch Nair </a></h2>
+    </section>
+ -->
+ <!--<section data-markdown>-->
+  <section data-state="title" style=""  > 
+    
+   <h1> Research, teaching and collaboration plan for Dept. of Applied Mechanics, IITD.</h1>
+     <h3> Prapanch Nair </h3>
+     <h4> Numerical Methods for Plasma Physics, <br> Max Planck Institute for Plasma Physics, Garching, Germany. <h4>
+      <footer>
+        \(
+        %%%% If you see this, MathJax wasn't loaded ...
+        \definecolor{myred}{RGB}{231,76,60}
+        \definecolor{mygreen}{RGB}{38,166,115}
+        \definecolor{myblue}{RGB}{38,89,166}
+        \definecolor{mynormal}{RGB}{41,128,185}
+        \)
+      </footer> 
+ </section>
+ <section>
+   <img class = "imgNoBorder" width="100%" src="motivation/iit_researchplans.png">
+ </section>
+ <section style="font-size:80%">
+   <h3> Objectives </h3>
+   <ul>
+     <li> Continue development of the  particle based multiphysics solver
+       <li> Apply the particle based solvers to complex flow problems
+         <li> Solution of suspensions and granular flow 
+           <li> Explore ML applications in geometrically nonlinear problems 
+             <li> Develop new multiphase flow solvers 
+   </ul>
+   <br>
+     <video width="60%" controls loop autoplay>
+       <source src="motivation/melting.mp4">
+       Your browser does not support the video tag.
+     </video><br>
+ </section>
+ <section style="font-size:80%">
+   <h3> Research project examples </h3>
+   <ul>
+     <li> Wetting of micropillar carpets with high aspect ratio:
+       <img class="imgNoBorder" src="motivation/har.png">
+
+       <li>Control of bubble coalescence through salt concentration
+         <li> Machine learning the permeability of porous media using FVM simulations
+           <li> Optimizing the powder beds in additive manufacturing
+             <li> Numerical Analysis of Smoothed Particle Hydrodynamics---improved boundary conditions             
+   </ul>
+
+ </section>
+ <section>
+   <h3> Research plan </h3>
+   <ul>
+     <li> Experience with writing 5 full length research proposals ( 3 to German science foundation, 1 to UGC-DAAD and 1 to Bavarian Supercomputing Consortium).
+       <li> Experience with programming in Python, C++, Fortran, setting up  HPC clusters and HPC experience
+         <li> On going collaborations (IISc, FAU Erlangen, University of Birmingham etc.)
+
+           <li> 
+   </ul>
+   [Refer research plan document]
+ </section>
+ <section style="font-size:60%">
+   <h3> Funds </h3>
+   <ul>
+     <li>Ministry of New and Renewable Energy (MNRE)
+       <li>Indian Space Research Organisation (ISRO)
+       <li>Indo French Centre for the Promotion of Advanced Research (IFCPAR)
+       <li>Indo-US Science & Technology Forum
+         <li>Deutsche Forschungsgemeinschaft (DFG – German Research Foundation)
+         <li>GAIL (India) Ltd.
+         <li>Department of Atomic Energy
+         <li>Council of Scientific & Industrial Research (CSIR)
+         <li>Defence Research & Development Organisation (DRDO)
+         <li>Bhabha Atomic Research Centre (BARC)
+         <li>Centre for Development of Advanced Computing (CDAC)
+         <li>Aeronautics Research and Development Board (ARDB)
+         <li>Science and Engineering Research Board (SERB)
+         <li>Tata Institute of Fundamental Research
+         <li>University Grants Commission
+   </ul>
+
+   </section>
+ <section data-markdown style="font-size:80%">
+   ## Introduction and Goals ##
+* Gene3d is a fork of Gene: Gyrokinetic plasma microturbulence simulator
+* Real coordinates: $ x, y, z, v_{||}, \mu, n $ 
+* Prohibitive memory requirements:
+     - strongly shaped flux surfaces 
+     - high gradients near the edge of the plasma
+     - grid resolution is therefore important
+* Switching from double to single precision gave acceptable results
+* ***Reduce memory foot print&mdash;improve performance***
+     - by attempting lossy compression of data
+     - by modifications that reduce memory
+     - to conclude on feasibility of compressors
+ </section>
+ <section>
+   <h3> Plan </h3>
+   <ol>
+     <li> Find what data is <i>compressible</i> in Gene3d
+       <li> Check if memory footprint can be reduced by other means
+         <strong>  <li> Implement compression tests to check accuracy </li></strong>
+           <li> Implement compression in a way that actually reduces the memory footprint
+   </ol>
+ </section>
+ <section style="font-size:80%">
+   <h3> Gene3d memory footprint </h3>
+   $$ f(x,y,z,v_{||},\mu, n)$$ <br>
+   $$\frac{\partial f_a}{\partial t }+\frac{q_a F_{M,a}}{T_a} \frac{v_{||}}{c}\frac{\partial \bar{A}_{||}}{\partial t} = R_a$$
+   <br>
+   Quasi-neutrality condition <br><br>
+   $$ \sum_a \underbrace{q_a^2\int d^3 v\left(\frac{F_{M,a}}{T_a}\phi_1(\mathbf{x},t)-{\color{red}\langle \frac{F_{M,a}}{T_a}\bar{\phi}_1(\mathbf{x},t)  \rangle} \right)}_{Fieldmatrix: (N_x\times N_y)^2}= \sum_a q_a \int d^3v{\color{red}\langle f_a \rangle} $$ <br>
+   <strong> Gyromatrix:$\color{red} (N_x\times N_y)^2$ $\color{red}[N_z, N_\mu, N_n]$ </strong>
+   <br>
+   <br>
+   Both Gyro and Field matrices are sparse
+ </section>
+ <section>
+   <h3> Gene3d memory footprint </h3>
+   <ul>
+   <li>   Script to output memory sizes to find the memory heirarchy
+     <li> There were 5 items larger in memory than $f_a$ : derivative prefactors, diagnostic arrays, and dense versions of matrices
+       <li> These were distributed in memory / removed with help of the  PIs.
+         <li> Blocking of $f_a$ was used, which I found to be doing nothing to improve the performance of the code. This was removed as well.
+   </ul>
+ </section>
+ <section style="font-size:80%">
+   <h3> <i> Dense </i> Sparse Matrices </h3>
+   <ul>
+     <li> Petsc does not have a method to sum individual sparse matrices (not gather)
+       <li> Sparsity of the summed matrices were not being predetermined 
+         <li> Temporary dense matrices were used to first sum (field matrices)  and then convert to sparse matrices!
+   </ul>
+   <pre><code class="hljs" data-line-numbers="1" data-trim data-noescape>
+      call MatGetValues(this%a,nRows_to_get,rows_to_get(1:nRows_to_get),this%NCols,cols,<mark>vals</mark>,ierr)
+      call petsc_check(ierr)                                                     
+                                                                                           
+      call mpi_allreduce(vals,vals_r,this%NCols*nRows_to_get,MPIU_SCALAR,MPIU_SUM,comm,istat)
+
+   </code></pre>
+<pre>
+<code data-trim data-noescape>
+if (<mark>abs(vals_r(linear_index)).gt.epsilon(vals_r(linear_index))</mark>) then   
+    nnz = nnz + 1
+    nnz_cols(nnz)=icol-1
+    row_vals(nnz)=vals_r(linear_index)
+end if
+</code>
+</pre>
+ </section>
+ <section style="font-size:80%">
+   <h3> Sparse Matrices</h3>
+Solution: 
+
+<pre>
+<code data-trim data-noescape>
+  allocate( vals(this%NCols*<mark>maxRowsPerBlock</mark>) )
+  allocate( vals_r(this%NCols*<mark>maxRowsPerBlock</mark>) )
+</code> </pre>
+<pre>
+<code data-trim data-noescape>
+  allocate( vals(this%NCols) )
+  allocate( vals_r(this%NCols) )
+</code> </pre>
+
+As a result of these changes and recommendations, we could achieve at least 100% reduction in maximum memory required per node. <br>
+Caveat: The MPI communicator used is not optimal for these matrix summations.
+ </section>
+ <section>
+   <h3> Lossy compression: ZFP</h3>
+   <img src="gene3d/all_var.png" class="imgNoBorder" width="900"> <br>
+
+ </section>
+ <section>
+   <h3> Lossy compression: ZFP</h3>
+   Initial implementation:<br>
+   compress-decompress $f_a$ once every time step 
+   <img src="gene3d/q_es.jpg" class="imgNoBorder" height="500"> <br>
+   <small>   Heat flux during the non-linear regime of a simulation</small>
+ </section>
+ <section>
+   <h3> Lossy compression: ZFP </h3>
+   Current issues:<br>
+   <ul>
+     <li>   Compression of $f_a$ at every R-K step's array 
+     <li> Raising bugs in unexpected areas
+       <ul>
+         <li> Variation in sparsity of field matrix! 
+         <li> Issues related to MPI communicator!
+       </ul>
+   </ul>
+ </section>
+ <section data-markdown >
+   ### Next steps ###
+* Compare the results of compression every step with uncompressed simulation
+* Implement the compression with a blocked interface, so all functions access $f_a$ through the blocks
+* Provide a different compressor library with a similar interface 
+ </section>
+   <section data-markdown>
+      ## Thank you ##
+   </section>
+  
+  </div>
+
+</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				slideNumber: true,
+        zoomKey: 'shift',
+				theme: 'simple',//Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: 'fade',//Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				math: {
+        //when mathjax is used
+              mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js', 
+//              mathjax: 'js/MathJax-2.4-latest/MathJax.js', 
+			        config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+        //when katex is used
+        // Uncomment to disable syntax error notifications
+                // notificationsEnabled: false   // default: true
+
+                // Elements to ignore for math rendering (defaults shown):
+               //  ignoredElements: [ 'pre', 'code' ]
+
+                // Set `enableGlobally` to `false` to avoid excessive
+                  // escaping of dollar characters. You will then need to
+                  // activate `$…$`-style replacements per slide with a
+                  // `data-math` attribute (formulas wrapped in elements
+                  // are still activated everywhere).
+                  //
+                  // enableGlobally: false
+
+                  // In case you need to load KaTeX from a different
+                  // location (relative or absolute URL):
+                  // katexScript:     'path/to/katex/katex.min.js',
+                  // katexStylesheet: 'path/to/katex/katex.min.css'
+			    },
+        multiplex: {
+        // Example values. To generate your own, see the socket.io server instructions.
+        secret: '14458580502417865033', // Obtained from the socket.io server. Gives this (the master) control of the presentation
+        id: '22172944e37abdbb', // Obtained from socket.io server
+        url: 'revealjs-51546.onmodulus.net:80' // Location of socket.io serveri
+          },
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true}, 
+          //condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js' , async: true },
+          { src: 'plugin/multiplex/master.js', async: true },
+//          { src: 'plugin/multiplex/client.js', async: true },
+// when mathjax was used
+          { src: 'plugin/math/math.js', async: true }
+// katex
+          //{ src: 'plugin/math-katex/math-katex.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
